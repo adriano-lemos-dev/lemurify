@@ -1,5 +1,7 @@
 # Lemurify
 
+[![Build Status](https://travis-ci.org/adriano-lemos-dev/lemurify.svg?branch=master)](https://travis-ci.org/adriano-lemos-dev/lemurify)
+
 A simple toy project to spread the Pearls of Wisdom from Adriano Lemos (that would be me, by the way).
 
 ## Getting Started
