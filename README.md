@@ -1,6 +1,7 @@
 # Lemurify
 
 [![Build Status](https://travis-ci.org/adriano-lemos-dev/lemurify.svg?branch=master)](https://travis-ci.org/adriano-lemos-dev/lemurify)
+[![Coverage Status](https://coveralls.io/repos/github/adriano-lemos-dev/lemurify/badge.svg?branch=buildbadge)](https://coveralls.io/github/adriano-lemos-dev/lemurify?branch=buildbadge)
 
 A simple toy project to spread the Pearls of Wisdom from Adriano Lemos (that would be me, by the way).
 
