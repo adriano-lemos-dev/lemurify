@@ -1,51 +1,49 @@
 {
   "name": "lemurify",
   "version": "1.0.0",
-  "author": "Carlos Augusto Borges",
-  "description": "Gerador de frases de sabedoria do Lemos",
+  "description": "Knowledge pearl from Lemos",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "deploy": "gh-pages -d dist"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testPathIgnorePatterns": [
+      "jestsetup.js$"
+    ],
+    "setupFiles": [
+      "./jest.conf/jestsetup.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
+  "license": "MIT",
   "dependencies": {
-    "connect": "^3.4.0",
-    "fabric-browserify": "^1.4.13",
-    "fabric-browseronly": "^1.6.0",
-    "jquery": "^2.1.4",
-    "money": "^0.2.0",
-    "qs": "^5.1.0",
-    "react": "^0.13.3",
-    "reactify": "^1.1.1",
-    "serve-static": "^1.10.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "browserify": "latest",
-    "uglify-js": "^3.1.3",
-    "watchify": "latest"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "reactify",
-        {
-          "es6": false
-        }
-      ]
-    ]
-  },
-  "scripts": {
-    "build-js": "browserify -t reactify src/main.js | ./node_modules/uglify-js/bin/uglifyjs > dist/main.js",
-    "watch-js": "watchify src/main.js -o dist/main.js -dv & node server.js"
-  },
-  "main": "js/main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/calimaborges/50centify.git"
-  },
-  "keywords": [
-    "reactify",
-    "reactjs",
-    "skeleton"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/calimaborges/50centify/issues"
-  },
-  "homepage": "https://github.com/calimaborges/50centify#readme"
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "coveralls": "^3.0.0",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "file-loader": "^1.1.5",
+    "gh-pages": "^1.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.2"
+  }
 }
