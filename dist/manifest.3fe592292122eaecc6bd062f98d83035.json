@@ -14,7 +14,7 @@
   "name": "Pérolas de saber do Lemos (toy app)",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "/lemurify/",
   "publicPath": null,
   "short_name": "Lemurify",
   "description": "Uma app para bricar com frases de efeito e testar alguns conceitos",
