@@ -12,14 +12,17 @@
   },
   "jest": {
     "collectCoverage": true,
-    "testPathIgnorePatterns": [
-      "jestsetup.js$"
+    "collectCoverageFrom": [
+      "src/app/**/*.js",
+      "!src/app/app.js",
+      "!.jest.conf/jestsetup.js"
     ],
     "setupFiles": [
+      "./jest.conf/shim.js",
       "./jest.conf/jestsetup.js"
     ],
     "moduleNameMapper": {
-      "^.+\\.(css|scss)$": "identity-obj-proxy"
+      "^.+\\.(css|scss|png)$": "identity-obj-proxy"
     }
   },
   "license": "MIT",
